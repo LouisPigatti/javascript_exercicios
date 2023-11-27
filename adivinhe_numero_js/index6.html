@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Advinhe o número</title>
+  </head>
+  <body onload="inicio()"> <!-- o onload chama a função toda vez que a página é recarregada. -->
+    <main>
+      <div id="welcomeScreen">
+        <h2 class="a">Advinhe o número secreto!</h2>
+        <h3>Você tem 6 chances!</h3>
+        <br>
+        <h2>1 - 100</h2>
+      </div>
+
+      <div id="gameArea">
+        <section>
+          <h3 id="textOutput">Tente aqui em baixo:</h3>
+          <input type="number" id="inputBox" min="1" max="100" onchange="compareNumbers()"/>
+          <!-- onchange realiza uma ação quando apertamos enter, nesse caso quando apertamos enter na caixa de números-->
+        </section>
+        <section class="stats">
+          <div class="info">
+            <p>Número de tentativas:</p>
+            <span id="attempts"></span>
+          </div>
+          <div class="info">
+            <p>Números que você já tentou:</p>
+            <span id="guesses"></span>
+          </div>
+        </section>
+        <button id="newGameButton" onclick="newGame()">Novo Jogo</button> <!-- onclick = quando clicar chama tal função-->
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
