@@ -191,3 +191,12 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+
+@media (max-width:500px) {
+  h1,h2 {
+    text-align: center;
+  }
+  #btn {
+    text-align: center;
+  }
+}
