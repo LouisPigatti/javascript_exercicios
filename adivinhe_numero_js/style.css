@@ -94,6 +94,8 @@
   @media (min-width: 800px) {
     body {
       width: 60vw;
+        justify-content: left;
+        text-align: left;
     }
   }
 
