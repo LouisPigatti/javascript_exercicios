@@ -93,8 +93,7 @@
   
   @media (max-width: 500px) {
     body {
-      width: 60vw;
-      justify-content: left;  
+      width: 60vw; 
     }
   }
 
