@@ -91,9 +91,10 @@
     border-radius: 4px;
   }
   
-  @media (min-width: 800px) {
+  @media (max-width: 500px) {
     body {
       width: 60vw;
+      justify-content: left;  
     }
   }
 
