@@ -91,9 +91,3 @@
     border-radius: 4px;
   }
   
-  @media (max-width: 500px) {
-    body {
-      width: 60vw; 
-    }
-  }
-
